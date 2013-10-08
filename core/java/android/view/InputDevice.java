@@ -975,6 +975,7 @@ public final class InputDevice implements Parcelable {
         appendSourceDescriptionIfApplicable(description, SOURCE_TOUCHPAD, "touchpad");
         appendSourceDescriptionIfApplicable(description, SOURCE_JOYSTICK, "joystick");
         appendSourceDescriptionIfApplicable(description, SOURCE_GAMEPAD, "gamepad");
+        appendSourceDescriptionIfApplicable(description, SOURCE_GESTURE_SENSOR, "gesture");
         description.append(" )\n");
 
         final int numAxes = mMotionRanges.size();
