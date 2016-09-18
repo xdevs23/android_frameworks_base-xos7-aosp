@@ -163,6 +163,18 @@ public final class InputDevice implements Parcelable {
      * @see #SOURCE_CLASS_BUTTON
      */
     public static final int SOURCE_GAMEPAD = 0x00000400 | SOURCE_CLASS_BUTTON;
+    
+    /**
+     * The input source is a touch device whose motions should be interpreted as gestures.
+     *
+     * For example, an upward swipe should be treated the same as a swipe of the touchscreen.
+     * The same should apply for left, right, down swipes. Complex gestures may also be input.
+     *
+     * @see #SOURCE_CLASS_NONE
+     *
+     * @hide
+     */
+    public static final int SOURCE_GESTURE_SENSOR = 0x00400000 | SOURCE_CLASS_NONE;
 
     /**
      * The input source is a touch screen pointing device.
