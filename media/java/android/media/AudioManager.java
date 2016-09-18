@@ -2903,7 +2903,7 @@ public class AudioManager {
      * @return a non-null list of recording configurations. An empty list indicates there is
      *     no recording active when queried.
      */
-    public @NonNull List<AudioRecordingConfiguration> getActiveRecordingConfigurations() {
+    public @NonNull AudioRecordingConfiguration[] getActiveRecordingConfigurations() {
         final IAudioService service = getService();
         try {
             return service.getActiveRecordingConfigurations();
